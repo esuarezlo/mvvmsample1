@@ -1,11 +1,11 @@
-package org.idnp.mvvmsample1.viewmodels;
+package org.idnp.mvvmsample.viewmodels;
 
 import android.util.Log;
 
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
 
-import org.idnp.mvvmsample1.BR;
+import org.idnp.mvvmsample.BR;
 
 /**
  *

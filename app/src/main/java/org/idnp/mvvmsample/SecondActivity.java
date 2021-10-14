@@ -1,12 +1,12 @@
-package org.idnp.mvvmsample1;
+package org.idnp.mvvmsample;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import org.idnp.mvvmsample1.databinding.ActivitySecondBinding;
-import org.idnp.mvvmsample1.viewmodels.SecondViewModel;
+import org.idnp.mvvmsample.databinding.ActivitySecondBinding;
+import org.idnp.mvvmsample.viewmodels.SecondViewModel;
 
 public class SecondActivity extends AppCompatActivity {
 

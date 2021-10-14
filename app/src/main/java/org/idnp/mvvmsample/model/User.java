@@ -1,4 +1,4 @@
-package org.idnp.mvvmsample1.model;
+package org.idnp.mvvmsample.model;
 
 public class User {
     private String email;

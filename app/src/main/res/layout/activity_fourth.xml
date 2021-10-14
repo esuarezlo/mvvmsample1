@@ -7,7 +7,7 @@
 
         <variable
             name="MiViewModelo"
-            type="org.idnp.mvvmsample1.viewmodels.FourthVideModel" />
+            type="org.idnp.mvvmsample.viewmodels.FourthVideModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

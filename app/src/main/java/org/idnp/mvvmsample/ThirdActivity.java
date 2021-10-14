@@ -1,14 +1,13 @@
-package org.idnp.mvvmsample1;
+package org.idnp.mvvmsample;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 
-import org.idnp.mvvmsample1.databinding.ActivityMainBinding;
-import org.idnp.mvvmsample1.databinding.ActivityThirdBinding;
-import org.idnp.mvvmsample1.viewmodels.LoginViewModel;
-import org.idnp.mvvmsample1.viewmodels.ThridViewModel;
+import org.idnp.mvvmsample.databinding.ActivityMainBinding;
+import org.idnp.mvvmsample.databinding.ActivityThirdBinding;
+import org.idnp.mvvmsample.viewmodels.ThridViewModel;
 
 public class ThirdActivity extends AppCompatActivity {
 

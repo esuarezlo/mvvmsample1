@@ -7,7 +7,7 @@
 
         <variable
             name="miVista"
-            type="org.idnp.mvvmsample1.viewmodels.ThridViewModel" />
+            type="org.idnp.mvvmsample.viewmodels.ThridViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

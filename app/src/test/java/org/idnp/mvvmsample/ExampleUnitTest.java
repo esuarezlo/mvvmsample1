@@ -1,4 +1,4 @@
-package org.idnp.mvvmsample1;
+package org.idnp.mvvmsample;
 
 import org.junit.Test;
 

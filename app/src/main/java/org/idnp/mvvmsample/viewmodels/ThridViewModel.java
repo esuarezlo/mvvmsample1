@@ -1,4 +1,4 @@
-package org.idnp.mvvmsample1.viewmodels;
+package org.idnp.mvvmsample.viewmodels;
 
 import androidx.databinding.BaseObservable;
 

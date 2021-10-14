@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.idnp.mvvmsample1">
+    package="org.idnp.mvvmsample">
 
     <application
         android:allowBackup="true"
@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mvvmsample1">
         <activity
-            android:name=".FourthActivity"
+            android:name="org.idnp.mvvmsample.FourthActivity"
             android:exported="true" />
         <activity
-            android:name=".ThirdActivity"
+            android:name="org.idnp.mvvmsample.ThirdActivity"
             android:exported="true" />
         <activity
-            android:name=".SecondActivity"
+            android:name="org.idnp.mvvmsample.SecondActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="org.idnp.mvvmsample.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

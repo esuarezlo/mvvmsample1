@@ -1,4 +1,4 @@
-package org.idnp.mvvmsample1.viewmodels;
+package org.idnp.mvvmsample.viewmodels;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,9 +9,9 @@ import android.util.Patterns;
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
 
-import org.idnp.mvvmsample1.BR;
-import org.idnp.mvvmsample1.SecondActivity;
-import org.idnp.mvvmsample1.model.User;
+import org.idnp.mvvmsample.BR;
+import org.idnp.mvvmsample.SecondActivity;
+import org.idnp.mvvmsample.model.User;
 
 public class LoginViewModel extends BaseObservable {
 

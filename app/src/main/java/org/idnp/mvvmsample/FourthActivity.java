@@ -1,14 +1,13 @@
-package org.idnp.mvvmsample1;
+package org.idnp.mvvmsample;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 
-import org.idnp.mvvmsample1.databinding.ActivityFourthBinding;
-import org.idnp.mvvmsample1.databinding.ActivitySecondBinding;
-import org.idnp.mvvmsample1.viewmodels.FourthVideModel;
-import org.idnp.mvvmsample1.viewmodels.SecondViewModel;
+import org.idnp.mvvmsample.databinding.ActivityFourthBinding;
+import org.idnp.mvvmsample.databinding.ActivitySecondBinding;
+import org.idnp.mvvmsample.viewmodels.FourthVideModel;
 
 public class FourthActivity extends AppCompatActivity {
 

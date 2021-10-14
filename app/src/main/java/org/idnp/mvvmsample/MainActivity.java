@@ -1,4 +1,4 @@
-package org.idnp.mvvmsample1;
+package org.idnp.mvvmsample;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.BindingAdapter;
@@ -8,8 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import org.idnp.mvvmsample1.databinding.ActivityMainBinding;
-import org.idnp.mvvmsample1.viewmodels.LoginViewModel;
+import org.idnp.mvvmsample.databinding.ActivityMainBinding;
+import org.idnp.mvvmsample.viewmodels.LoginViewModel;
 
 public class MainActivity extends AppCompatActivity {
 
