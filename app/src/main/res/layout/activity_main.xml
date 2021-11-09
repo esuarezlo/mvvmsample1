@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="org.idnp.mvvmsample.viewmodels.LoginViewModel" />
+            type="org.idnp.mvvmsample.viewmodels.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -62,7 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="@{()->viewModel.onSecondActivity()}"
-                    android:text="Second Activity" />
+                    android:text="Cursos" />
 
 
             </LinearLayout>

@@ -6,7 +6,6 @@ import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 import org.idnp.mvvmsample.databinding.ActivityUnitBinding;
-import org.idnp.mvvmsample.viewmodels.LoginViewModel;
 import org.idnp.mvvmsample.viewmodels.UnitViewModel;
 
 public class UnitActivity extends AppCompatActivity {

@@ -10,10 +10,10 @@ import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
 
 import org.idnp.mvvmsample.BR;
-import org.idnp.mvvmsample.UnitDetailActivity;
+import org.idnp.mvvmsample.UnitActivity;
 import org.idnp.mvvmsample.model.User;
 
-public class LoginViewModel extends BaseObservable {
+public class MainViewModel extends BaseObservable {
 
     private User user;
     private String successMessage = "Login was successful";
@@ -54,7 +54,7 @@ public class LoginViewModel extends BaseObservable {
         notifyPropertyChanged(BR.userPassword);
     }
 
-    public LoginViewModel(Context context) {
+    public MainViewModel(Context context) {
         user = new User();
         this.context = context;
     }
@@ -73,7 +73,7 @@ public class LoginViewModel extends BaseObservable {
     }
 
     public void onSecondActivity() {
-        Intent intent = new Intent(context, UnitDetailActivity.class);
+        Intent intent = new Intent(context, UnitActivity.class);
         context.startActivity(intent);
     }
 

@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import org.idnp.mvvmsample.databinding.ActivityMainBinding;
-import org.idnp.mvvmsample.viewmodels.LoginViewModel;
+import org.idnp.mvvmsample.viewmodels.MainViewModel;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         //setContentView(R.layout.activity_main);
 
         ActivityMainBinding activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        activityMainBinding.setViewModel(new LoginViewModel(this));
+        activityMainBinding.setViewModel(new MainViewModel(this));
         activityMainBinding.executePendingBindings();
 
     }

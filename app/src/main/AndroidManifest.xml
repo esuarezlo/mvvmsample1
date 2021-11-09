@@ -10,16 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mvvmsample1" >
         <activity
-            android:name=".MainActivity"
-            android:exported="true" />
-        <activity
-            android:name=".UnitDetailActivity"
+            android:name=".UnitActivity"
             android:exported="true" />
         <activity
             android:name=".SecondActivity"
             android:exported="true" />
         <activity
-            android:name=".UnitActivity"
+            android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
