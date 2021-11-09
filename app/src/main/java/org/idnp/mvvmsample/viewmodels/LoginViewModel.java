@@ -10,7 +10,7 @@ import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
 
 import org.idnp.mvvmsample.BR;
-import org.idnp.mvvmsample.SecondActivity;
+import org.idnp.mvvmsample.UnitDetailActivity;
 import org.idnp.mvvmsample.model.User;
 
 public class LoginViewModel extends BaseObservable {
@@ -73,7 +73,7 @@ public class LoginViewModel extends BaseObservable {
     }
 
     public void onSecondActivity() {
-        Intent intent = new Intent(context, SecondActivity.class);
+        Intent intent = new Intent(context, UnitDetailActivity.class);
         context.startActivity(intent);
     }
 
