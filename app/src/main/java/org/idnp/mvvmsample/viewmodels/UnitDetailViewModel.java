@@ -42,12 +42,8 @@ public class UnitDetailViewModel extends BaseObservable {
     }
 
     public void setUnitCode(String value) {
-        //this.unitCode = Integer.valueOf(value);
         Log.d(TAG, value);
-        if (Integer.valueOf(value) instanceof Integer) {
-            unitEntity.setCode(Integer.valueOf(value));
-        }
-        //notifyPropertyChanged(BR.unitCode);
+        unitEntity.setCode(Integer.parseInt(value));
     }
 
     @Bindable
@@ -57,7 +53,6 @@ public class UnitDetailViewModel extends BaseObservable {
 
     public void setUnitName(String value) {
         unitEntity.setName(value);
-        //notifyPropertyChanged(BR.unitName);
     }
 
     @Bindable
@@ -66,8 +61,7 @@ public class UnitDetailViewModel extends BaseObservable {
     }
 
     public void setUnitCredit(String value) {
-        unitEntity.setCredit(Integer.valueOf(value));
-        //notifyPropertyChanged(BR.unitCode);
+        unitEntity.setCredit(Integer.parseInt(value));
     }
 
     @Bindable
