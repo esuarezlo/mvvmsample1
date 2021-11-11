@@ -12,7 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".UnitActivity">
+        tools:context=".vista.UnitActivity">
 
         <Button
             android:id="@+id/btnBack"
@@ -30,8 +30,8 @@
             android:id="@+id/btnAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="172dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="228dp"
+            android:layout_marginTop="16dp"
             android:onClick="@{()->unitViewModel.onClickSave()}"
             android:text="Add"
             app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +109,7 @@
             android:ems="10"
             android:inputType="number"
             android:minHeight="48dp"
-            android:text="@={unitViewModel.code}"
+            android:text="@={unitViewModel.unitCode}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -123,7 +123,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@={unitViewModel.name}"
+            android:text="@={unitViewModel.unitName}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edtCode" />
 
@@ -136,7 +136,7 @@
             android:ems="10"
             android:inputType="number"
             android:minHeight="48dp"
-            android:text="@={unitViewModel.credit}"
+            android:text="@={unitViewModel.unitCredit}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
@@ -167,7 +167,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="88dp"
             android:layout_marginTop="48dp"
-            android:text="@{String.valueOf(unitViewModel.unit.credit)}"
+            android:text="@{String.valueOf(unitViewModel.unit.Credit)}"
             android:textSize="22sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -201,6 +201,17 @@
             android:text="Credit:"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="16dp"
+            android:onClick="@{()->unitViewModel.onClickNewItem()}"
+            android:text="Nuevo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

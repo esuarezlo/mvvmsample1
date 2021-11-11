@@ -13,7 +13,8 @@ public class UnitViewModel extends BaseObservable {
 
     private static final String TAG = "UnitViewModel";
     private UnitHelper unitHelper;
-    private UnitEntity unit;
+    private UnitEntity unitEntity;
+    private UnitEntity unitNewEntity;
 
     @Bindable
     public String code;
@@ -24,38 +25,85 @@ public class UnitViewModel extends BaseObservable {
 
     public UnitViewModel() {
         unitHelper = new UnitHelper();
-        unit = unitHelper.firstUnit();
-        Log.d(TAG, unit.getName());
+        unitEntity = unitHelper.firstUnit();
+        Log.d(TAG, unitEntity.getName());
+    }
+
+    public void setUnitCode(String value) {
+        unitNewEntity.setCode(Integer.parseInt(value));
+    }
+
+    @Bindable
+    public String getUnitCode() {
+        if (unitNewEntity != null)
+        return String.valueOf(unitNewEntity.getCode());
+        else
+            return "";
+    }
+
+    public void setUnitName(String value) {
+        unitNewEntity.setName(value);
+    }
+
+    @Bindable
+    public String getUnitName() {
+        if (unitNewEntity != null)
+            return unitNewEntity.getName();
+        else
+            return "";
+    }
+
+    public void setUnitCredit(String value) {
+        unitNewEntity.setCredit(Integer.parseInt(value));
+    }
+
+    @Bindable
+    public String getUnitCredit() {
+        if (unitNewEntity != null)
+            return String.valueOf(unitNewEntity.getCredit());
+        else
+            return "";
+    }
+
+    public void setUnit(UnitEntity unitEntity) {
+        unitHelper.addUnit(unitEntity);
+        notifyPropertyChanged(BR.unit);
     }
 
     @Bindable
     public UnitEntity getUnit() {
-        return unit;
+        return unitEntity;
     }
 
     public void onClickPrevious() {
-        unit = unitHelper.previousUnit();
+        unitEntity = unitHelper.previousUnit();
         notifyPropertyChanged(BR.unit);
     }
 
     public void onClickNext() {
-        unit = unitHelper.nextUnit();
+        unitEntity = unitHelper.nextUnit();
         notifyPropertyChanged(BR.unit);
     }
 
     public void onClickSave() {
         Log.d(TAG, "-----------" + code);
         try {
-            unit = new UnitEntity();
-            unit.setCode(Integer.parseInt(code));
-            unit.setName(name);
-            unit.setCredit(Integer.parseInt(credit));
-            unitHelper.addUnit(unit);
-            notifyPropertyChanged(BR.unit);
+//            unitEntity = new UnitEntity();
+//            unitEntity.setCode(Integer.parseInt(code));
+//            unitEntity.setName(name);
+//            unitEntity.setCredit(Integer.parseInt(credit));
+//            setUnit(unitEntity);
+            if (unitNewEntity != null)
+                setUnit(unitNewEntity);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
 
+    }
+
+    public void onClickNewItem() {
+        unitNewEntity = new UnitEntity();
     }
 
 

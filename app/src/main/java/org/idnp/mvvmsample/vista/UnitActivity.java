@@ -1,10 +1,11 @@
-package org.idnp.mvvmsample;
+package org.idnp.mvvmsample.vista;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import android.os.Bundle;
-
+import org.idnp.mvvmsample.R;
 import org.idnp.mvvmsample.databinding.ActivityUnitBinding;
 import org.idnp.mvvmsample.viewmodels.UnitViewModel;
 

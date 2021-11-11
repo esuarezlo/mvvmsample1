@@ -1,4 +1,4 @@
-package org.idnp.mvvmsample;
+package org.idnp.mvvmsample.vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.BindingAdapter;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import org.idnp.mvvmsample.R;
 import org.idnp.mvvmsample.databinding.ActivityMainBinding;
 import org.idnp.mvvmsample.viewmodels.MainViewModel;
 

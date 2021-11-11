@@ -10,7 +10,7 @@ import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
 
 import org.idnp.mvvmsample.BR;
-import org.idnp.mvvmsample.UnitActivity;
+import org.idnp.mvvmsample.vista.UnitActivity;
 import org.idnp.mvvmsample.model.User;
 
 public class MainViewModel extends BaseObservable {
