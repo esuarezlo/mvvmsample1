@@ -66,7 +66,10 @@ public class UnitViewModel extends BaseObservable {
     }
 
     public void setUnit(UnitEntity unitEntity) {
+
         unitHelper.addUnit(unitEntity);
+        //unitEntity=unitNewEntity;
+        this.unitEntity=unitEntity;
         notifyPropertyChanged(BR.unit);
     }
 
